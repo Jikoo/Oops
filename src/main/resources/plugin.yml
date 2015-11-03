@@ -2,6 +2,7 @@ name: Oops
 main: com.github.jikoo.oops.OopsPlugin
 version: 1.0
 author: Jikoo
+description: Suggests corrections for malformed commands.
 
 permissions:
  oops.use:

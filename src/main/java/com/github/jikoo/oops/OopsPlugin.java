@@ -150,6 +150,9 @@ public class OopsPlugin extends JavaPlugin implements Listener {
 	}
 
 	private boolean handleFailedCommand(CommandSender sender, String executed) {
+		if (!sender.hasPermission("oops.use")) {
+			return false;
+		}
 		int space = executed.indexOf(' ');
 		boolean slash = executed.length() > 0 && executed.charAt(0) == '/';
 		String commandName = executed.substring(slash ? 1 : 0, space > 0 ? space : executed.length()).toLowerCase();
