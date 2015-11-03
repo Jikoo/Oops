@@ -1,0 +1,15 @@
+# Aliases for /oops to inject
+# Note: this will forcibly override any commands added by other plugins which enable before Oops!
+# It will not override aliases added by commands.yml
+aliases:
+- opps
+- whoops
+
+# Rather than prompt users to use /oops, instantly correct the command.
+# Note: This option is highly dangerous! Imagine meaning to send a message and opping someone.
+instant-correction: false
+
+lang:
+  # {0} = /, if required. {1} = corrected command name.
+  # As console is supported, the forward slash may or may not exist.
+  oops: '&6&lOops! &aDid you mean &b{0}{1}&a? Run &b{0}oops&a!'
